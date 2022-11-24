@@ -18,7 +18,7 @@ describe('UsersController', () => {
   describe('addData', () => {
     it('should return an user list ', async () => {
       const result = 'Data added';
-      expect(await userController.addData()).toBe(result);
+      expect(userController.addData()).toBe(result);
     });
   });
 
@@ -33,7 +33,7 @@ describe('UsersController', () => {
     it('should not create  the user  ', async () => {
       const result = '';
       jest.spyOn(userService, 'create').mockImplementation(() => result);
-      expect(await userController.userAdd(result)).toBe(result);
+      expect(userController.userAdd(result)).toBe(result);
     });
   });
 });
