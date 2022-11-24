@@ -18,14 +18,14 @@ describe('UsersService', () => {
 
   describe('create', () => {
     it('should return listing of assays', async () => {
-      const result = await userService.create([]);
+      const result = userService.create([]);
       expect(result).toEqual('Created successfully');
     });
   });
 
   describe('findData', () => {
     it('should return listing of assays', async () => {
-      const result = await userService.findData();
+      const result = userService.findData();
       expect(result).toEqual([]);
     });
   });
