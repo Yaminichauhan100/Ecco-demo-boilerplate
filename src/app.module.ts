@@ -1,14 +1,9 @@
 import { Module, ValidationPipe } from '@nestjs/common';
 import { APP_PIPE } from '@nestjs/core';
-//import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
-// import { AppLoggerMiddleware } from './app.middleware';
-// import cookieSession from 'cookie-session';
-// import { TypeOrmModule } from '@nestjs/typeorm';
-// import { User } from './users/user.entity';
 
 @Module({
   imports: [
