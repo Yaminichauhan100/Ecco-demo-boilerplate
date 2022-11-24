@@ -10,6 +10,7 @@ export class UsersService {
 
   create(data: any) {
     this.users.push(data);
+    return 'Created successfully';
   }
   findData(): any[] {
     return this.users;

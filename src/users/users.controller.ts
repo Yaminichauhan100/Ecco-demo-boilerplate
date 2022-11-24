@@ -19,12 +19,13 @@ export class UsersController {
   addData(): string {
     return 'Data added';
   }
-  @Get()
+  @Get('user-list')
   userList(): any {
     return this.userservice.findData();
   }
   @Post('user-add')
   userAdd(@Body() record: any) {
+    console.log(record);
     return this.userservice.create(record);
   }
 }
