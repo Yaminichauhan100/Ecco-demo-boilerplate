@@ -15,16 +15,21 @@ describe('UsersService', () => {
   it('should be defined', () => {
     expect(userService).toBeDefined();
   });
-
+  describe('findOne', () => {
+    it('should find user Id', async () => {
+      const result = userService.findOne(1);
+      expect(result).toEqual('Method not implemented');
+    });
+  });
   describe('create', () => {
-    it('should return listing of assays', async () => {
+    it('should create data', async () => {
       const result = userService.create([]);
       expect(result).toEqual('Created successfully');
     });
   });
 
   describe('findData', () => {
-    it('should return listing of assays', async () => {
+    it('should find data', async () => {
       const result = userService.findData();
       expect(result).toEqual([]);
     });

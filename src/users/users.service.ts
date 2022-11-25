@@ -4,7 +4,7 @@ import { Injectable } from '@nestjs/common';
 export class UsersService {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   findOne(_userId: any) {
-    throw new Error('Method not implemented.');
+    return 'Method not implemented';
   }
   private readonly users: any[] = [];
 
