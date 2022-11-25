@@ -15,12 +15,12 @@ describe('UsersService', () => {
   it('should be defined', () => {
     expect(userService).toBeDefined();
   });
-  // describe('findOne', () => {
-  //   it('should find userId', async () => {
-  //     const result = userService.findOne(1);
-  //     expect(result).toEqual('Method not implemented');
-  //   });
-  // });
+  describe('findOne', () => {
+    it('should find userId', async () => {
+      const result = userService.findOne(1);
+      expect(result).toEqual('Method not implemented');
+    });
+  });
   describe('create', () => {
     it('should create data', async () => {
       const result = userService.create([]);
