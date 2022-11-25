@@ -11,8 +11,7 @@ import { UsersModule } from './users/users.module';
       isGlobal: true,
       envFilePath: `.env.${process.env.NODE_ENV}`,
     }),
-    // TypeOrmModule.forFeature([User]),
-    // TypeOrmModule.forRoot(),
+
     UsersModule,
   ],
   controllers: [AppController],

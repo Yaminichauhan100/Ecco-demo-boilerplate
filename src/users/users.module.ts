@@ -8,7 +8,6 @@ import { CurrentUserMiddleware } from './middlewares/current-user.middleware';
   imports: [],
   controllers: [UsersController],
   providers: [UsersService],
-  //exports: [TypeOrmModule],
 })
 export class UsersModule {
   configure(consumer: MiddlewareConsumer) {
