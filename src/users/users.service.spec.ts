@@ -17,7 +17,7 @@ describe('UsersService', () => {
   });
   describe('findOne', () => {
     it('should find userId', async () => {
-      const result = userService.findOne(1);
+      const result = userService.findOne(2);
       expect(result).toEqual('Method not implemented');
     });
   });
